@@ -1,0 +1,38 @@
+#include<stdio.h>
+void prossing();
+int main(){
+    char name[30];
+    int num;
+printf("welcome to kiran organisation\nlet's start with your name\n");
+gets(name);
+printf("mr.%s we four plans\n",name);
+printf("press 1 for 1 month plan\npress 2 for 3 months plan\npress 3 for six months plan\npress 4 for 1 year plan\n");
+printf("enter number\n");
+scanf("%d",&num);
+switch (num)
+{
+case 1: printf("you will get assorarys for 1month\n");
+prossing();
+break;
+case 2:printf("you will get assorarys for 3month\n");
+prossing();
+break;
+case 3:printf("you will get assorarys for 6month\n");
+prossing();
+break;
+case 4:printf("you will get assorarys for 1year\n");
+prossing();
+break;
+default:printf("invaild input\n");
+    break;
+}
+}
+void prossing(){
+    char account_num,upi;
+    printf("enter your number\n");
+    scanf("%d",&account_num);
+    printf("enter your upi pin\n");
+    scanf("%d",&upi);
+    printf("processing..\n");
+    printf("your done with your subcriton");
+}
